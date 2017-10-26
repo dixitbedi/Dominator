@@ -20,5 +20,4 @@ public class ClickHandler extends WebElementHandler {
 		waitAndFindElement();
 		element.click();
 	}
-	
 }

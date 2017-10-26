@@ -17,4 +17,5 @@ public class Link extends ClickHandler {
 	protected String getReferenceAction() {
         return element.getAttribute("href");
     }
+	
 }
