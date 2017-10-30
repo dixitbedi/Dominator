@@ -26,18 +26,7 @@ public class SimpleFormPage{
 	}
 	
 	public void login(String username, String password) throws Exception {
-		/*	driver.findElement(By.xpath(".//input[@name='uid']")).sendKeys(username);
-			driver.findElement(By.xpath(".//input[@name='password']")).sendKeys(password);
-			driver.findElement(By.xpath(".//input[@name='btnLogin']")).click();*/
-			
-		enterMessage = new TextField(driver, By.xpath(".//*[@id='user-message']"));
-		userNameField = new TextField(driver, By.xpath(".//input[@name='uid']"));
-		passwordField = new TextField(driver, By.xpath(".//input[@name='password']"));
-		logInButton = new Button(driver, By.xpath(".//input[@name='btnLogin']"));
-		userNameField.sendKeys(username);
-		passwordField.sendKeys("qweqwew");
-		logInButton.click();
-		/*if(userNameField.isPresentAndVisible()  &&  passwordField.isPresentAndVisible()) {
+		if(userNameField.isPresentAndVisible()  &&  passwordField.isPresentAndVisible()) {
 			userNameField.clear();
 			userNameField.type(username);
 			passwordField.clear();
@@ -50,7 +39,7 @@ public class SimpleFormPage{
 			System.out.println(passwordField);
 			System.out.println(logInButton);
 			throw new Exception("not able to login");
-		}*/
+		}
 	}
 
 	public SimpleFormPage enterText() {

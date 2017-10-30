@@ -39,22 +39,6 @@ public class WebElementHandler {
 		waitingTimeForElement = TestDriver.getWaitingTimeForElement();
 	}
 	
-	public List<WebElement> getWebElements(){
-		return driver.findElements(by);
-	}
-
-	public WebElement getWebElement(int num){
-		return driver.findElements(by).get(num);
-	}
-	
-	public List<WebElement> getChildWebElements(){
-		return parentElement.findElements(by);
-	}
-	
-	public WebElement getChildWebElements(int num){
-		return parentElement.findElements(by).get(num);
-	}
-	
 	public void sendKeys(CharSequence...charSequences){
 		waitAndFindElement();
 		element.sendKeys(charSequences);
@@ -148,7 +132,7 @@ public class WebElementHandler {
 			if(parentElement != null){
 				element = parentElement.findElement(by);
 			}else{
-				element = new WebDriverWait(driver, timeOutInSeconds).until(ExpectedConditions.visibilityOfElementLocated(by));
+				element = (new WebDriverWait(driver, waitingTimeForElement).until(ExpectedConditions.visibilityOfElementLocated(by)));
 			}
 		} catch (Exception e) {
 			takeScreenshot();
