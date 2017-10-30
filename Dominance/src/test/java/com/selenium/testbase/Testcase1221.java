@@ -4,24 +4,20 @@ import org.testng.annotations.Test;
 
 import com.selenium.pages.SimpleFormPage;
 import com.selenium.testdriver.TestDriver;
+import com.selenium.utility.Constants;
 
 public class Testcase1221 extends TestDriver {
 	
-	public Testcase1221() {
-		super();
+	private SimpleFormPage simpleformpage;
+	
+	@Override
+	protected void pageSetup() {
+		simpleformpage = new SimpleFormPage(driver);
 	}
 	
-	SimpleFormPage sfp = new SimpleFormPage(driver);
-	
-	@Test
-	public void step123() {
-		sfp.enterText();
-		sfp.clear();
-	}
-
-	@Test
-	public void step1234() {
-		sfp.enterText();
-		sfp.clear();
+	@Test(timeOut=1000)
+	public void step123() throws Exception {
+		System.out.println("step123");
+		simpleformpage.login(Constants.USERNAME, Constants.PASSWORD);
 	}
 }

@@ -16,7 +16,7 @@ public class Constants {
 
 	public static final String WRONGPASSWORD = "systemmmmmmmmm";
 
-	public static final String URL ="http://www.seleniumeasy.com/test/basic-first-form-demo.html";
+	public static final String URL = "http://demo.guru99.com/v4/";
 	
 	public static final String ERRORMESSAGE1 = "Username or Password or Client is incorrect";
 	

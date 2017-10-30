@@ -2,6 +2,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Regression LoginSuite">
    <test name="Chrome Test">
+   <parameter name="url" value="http://demo.guru99.com/v4/"/>
       <parameter name="browser" value="Chrome"/>
       <classes>
          <class name="com.selenium.testbase.Testcase1221"/>

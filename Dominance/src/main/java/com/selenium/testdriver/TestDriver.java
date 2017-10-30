@@ -1,6 +1,7 @@
 package com.selenium.testdriver;
 
 import java.io.File;
+import java.io.IOException;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -18,9 +19,11 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.ITestResult;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
-import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 
 import com.aventstack.extentreports.ExtentReports;
@@ -30,11 +33,14 @@ import com.aventstack.extentreports.reporter.configuration.ChartLocation;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 import com.selenium.utility.Constants;
 
-public class TestDriver {
+public abstract class TestDriver {
 
 	public WebDriver driver;
 	public ExtentReports report;
+	public String url;
 	public ExtentTest test;
+	protected static int waitForPageLoad;
+	private static Long waitingTimeForElement;
 	public ExtentHtmlReporter htmlReporter;
 	public DateFormat dateformat = new SimpleDateFormat(" MM-dd-yyyy HHmmss");
 	public Date date = new Date();
@@ -51,10 +57,17 @@ public class TestDriver {
 		report.attachReporter(htmlReporter);
 	}
 
-	@Parameters("browser")
-	@BeforeTest
-	public void setBrowser(String browser) throws InterruptedException
-	{
+	@BeforeClass(alwaysRun=true)
+	@Parameters({"browser","url","waitingTimeForElement","waitTillElementPresent","waitForPageLoad"})
+	public void setBrowser(@Optional("")String browser,
+						   @Optional("")String url,
+						   @Optional("40")int waitingTimeToFindElement,
+						   @Optional("30")Long waitTillElementPresent,
+						   @Optional("10")int waitForPageLoad) throws IOException {
+		
+		TestDriver.waitForPageLoad = waitForPageLoad;
+		this.setWaitingTimeForElement(waitTillElementPresent);
+		
 		if (browser.equalsIgnoreCase("Firefox")) {
 			System.out.println("Launching Firefox");
 			System.setProperty("webdriver.firefox.marionette", Constants.FIREFOXPATH);
@@ -74,10 +87,11 @@ public class TestDriver {
 		else {
 			throw new IllegalArgumentException("Invalid browser value!!");
 		}
+		driver.manage().timeouts().implicitlyWait(waitingTimeToFindElement, TimeUnit.SECONDS);
+		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
-		driver.get(Constants.URL);
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		driver.manage().window().maximize();	
+		driver.get(url);
+		pageSetup();
 	}
 	
 	@AfterMethod
@@ -98,9 +112,28 @@ public class TestDriver {
 		report.flush();
 	}
 	
-	@AfterTest
-	public void closing() throws InterruptedException {
+	protected abstract void pageSetup();
+	
+	public static void wait(int seconds) throws Exception {
+		try {
+			Thread.sleep(seconds * 1000);
+		} catch (InterruptedException e) {
+			throw new Exception("waitiing for the element"); 
+		}
+	}
+	
+	@AfterClass(alwaysRun = true)
+	public void stop() throws InterruptedException {
 		Thread.sleep(5000);
 		driver.quit();
 	}
+	
+	public static Long getWaitingTimeForElement() {
+		return waitingTimeForElement;
+	}
+	
+	public void setWaitingTimeForElement(Long waitingTimeForElement) {
+		TestDriver.waitingTimeForElement = waitingTimeForElement;
+	}
+
 }

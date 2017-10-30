@@ -2,6 +2,7 @@ package com.selenium.handler;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.List;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
@@ -14,6 +15,8 @@ import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import com.selenium.testdriver.TestDriver;
+
 public class WebElementHandler {
 	protected static final int MAX_TIMEOUT  = 10;
 	
@@ -21,18 +24,37 @@ public class WebElementHandler {
 	protected WebElement element;
 	protected WebElement parentElement;
 	protected By by;
+	private Long waitingTimeForElement;
 	private Long timeOutInSeconds;
 
 	public WebElementHandler(WebDriver driver, By by) {
 		this.driver = driver;
 		this.by = by;
+		waitingTimeForElement = TestDriver.getWaitingTimeForElement();
 	}
 
 	public WebElementHandler(WebElement parentElement, By by) {
 		this.parentElement = parentElement;
 		this.by = by;
+		waitingTimeForElement = TestDriver.getWaitingTimeForElement();
+	}
+	
+	public List<WebElement> getWebElements(){
+		return driver.findElements(by);
 	}
 
+	public WebElement getWebElement(int num){
+		return driver.findElements(by).get(num);
+	}
+	
+	public List<WebElement> getChildWebElements(){
+		return parentElement.findElements(by);
+	}
+	
+	public WebElement getChildWebElements(int num){
+		return parentElement.findElements(by).get(num);
+	}
+	
 	public void sendKeys(CharSequence...charSequences){
 		waitAndFindElement();
 		element.sendKeys(charSequences);
