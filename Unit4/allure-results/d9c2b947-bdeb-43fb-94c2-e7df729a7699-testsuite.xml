@@ -1,0 +1,63 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1511939692671' stop='1511939778642'>
+    <name>Unit4 Login</name>
+    <title>Unit4 Login</title>
+    <test-cases>
+        <test-case start='1511939692671' status='passed' stop='1511939697394'>
+            <name>Open URL</name>
+            <title>Open URL</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1511939697394' status='passed' stop='1511939701641'>
+            <name>Login into the application</name>
+            <title>Login into the application</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1511939701641' status='passed' stop='1511939741258'>
+            <name>Selecting Ansvarsstedon on home page</name>
+            <title>Selecting Ansvarsstedon on home page</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1511939741258' status='passed' stop='1511939756263'>
+            <name>Creating Negotiation on home page</name>
+            <title>Creating Negotiation on home page</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1511939756263' status='passed' stop='1511939767093'>
+            <name>Deleting Negotiation on home page</name>
+            <title>Deleting Negotiation on home page</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1511939767093' status='passed' stop='1511939773096'>
+            <name>Editing Negotiation on home page</name>
+            <title>Editing Negotiation on home page</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1511939773096' status='passed' stop='1511939778641'>
+            <name>Logout of the application</name>
+            <title>Logout of the application</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

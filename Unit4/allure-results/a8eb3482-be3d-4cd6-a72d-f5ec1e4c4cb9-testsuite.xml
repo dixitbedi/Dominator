@@ -1,0 +1,96 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1511956965281' stop='1511957070512'>
+    <name>Unit4 Login</name>
+    <title>Unit4 Login</title>
+    <test-cases>
+        <test-case start='1511956965282' status='passed' stop='1511956971332'>
+            <name>Open URL</name>
+            <title>Open URL</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1511956971334' status='passed' stop='1511956975400'>
+            <name>Login into the application</name>
+            <title>Login into the application</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1511956975400' status='passed' stop='1511957013692'>
+            <name>Selecting Ansvarsstedon on home page</name>
+            <title>Selecting Ansvarsstedon on home page</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1511957013692' status='failed' stop='1511957027990'>
+            <name>Creating Negotiation on home page</name>
+            <title>Creating Negotiation on home page</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Expected '' to be 'Lagring vellykket'.</message>
+                <stack-trace>Error: Failed expectation
+                    at home_page.createNegotiation (C:\Users\dixit.bedi\Eclipse-javascript\Unit4\Pages\home_page.js:89:51)
+                    at UserContext.&lt;anonymous> (C:\Users\dixit.bedi\Eclipse-javascript\Unit4\Tests\unit4_login_test.js:28:13)
+                    at C:\Users\dixit.bedi\Eclipse-javascript\Unit4\node_modules\protractor\node_modules\jasminewd2\index.js:112:25
+                    at new ManagedPromise (C:\Users\dixit.bedi\Eclipse-javascript\Unit4\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1077:7)
+                    at ControlFlow.promise (C:\Users\dixit.bedi\Eclipse-javascript\Unit4\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2505:12)
+                    at schedulerExecute (C:\Users\dixit.bedi\Eclipse-javascript\Unit4\node_modules\protractor\node_modules\jasminewd2\index.js:95:18)
+                    at TaskQueue.execute_ (C:\Users\dixit.bedi\Eclipse-javascript\Unit4\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+                    at TaskQueue.executeNext_ (C:\Users\dixit.bedi\Eclipse-javascript\Unit4\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+                    at asyncRun (C:\Users\dixit.bedi\Eclipse-javascript\Unit4\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1511957027991' status='passed' stop='1511957038771'>
+            <name>Deleting Negotiation on home page</name>
+            <title>Deleting Negotiation on home page</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1511957038772' status='passed' stop='1511957044625'>
+            <name>Editing Negotiation on home page</name>
+            <title>Editing Negotiation on home page</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1511957044625' status='passed' stop='1511957064652'>
+            <name>Selecting Administrasjon on home page</name>
+            <title>Selecting Administrasjon on home page</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1511957064653' status='pending' stop='1511957064657'>
+            <name>Entering Bruker on home page</name>
+            <title>Entering Bruker on home page</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Temporarily disabled with xit</message>
+                <stack-trace></stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1511957064657' status='passed' stop='1511957070508'>
+            <name>Logout of the application</name>
+            <title>Logout of the application</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

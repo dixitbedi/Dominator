@@ -1,0 +1,97 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1511957948111' stop='1511958070421'>
+    <name>Unit4 Login</name>
+    <title>Unit4 Login</title>
+    <test-cases>
+        <test-case start='1511957948112' status='passed' stop='1511957953228'>
+            <name>Open URL</name>
+            <title>Open URL</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='c0c4f3e9-1f40-49b0-b026-165a4aa2c7d7-attachment.png' type='image/png' size='14903'/>
+            </attachments>
+        </test-case>
+        <test-case start='1511957953229' status='passed' stop='1511957957986'>
+            <name>Login into the application</name>
+            <title>Login into the application</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='a180fa47-133a-4af5-a815-7f3b67968b26-attachment.png' type='image/png' size='33888'/>
+            </attachments>
+        </test-case>
+        <test-case start='1511957957986' status='passed' stop='1511957996739'>
+            <name>Selecting Ansvarsstedon on home page</name>
+            <title>Selecting Ansvarsstedon on home page</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='393ed20f-883f-482c-8368-25f0551af6a0-attachment.png' type='image/png' size='52911'/>
+            </attachments>
+        </test-case>
+        <test-case start='1511957996739' status='passed' stop='1511958012001'>
+            <name>Creating Negotiation on home page</name>
+            <title>Creating Negotiation on home page</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='45e07824-7e09-4137-b287-0d5fd75b9b08-attachment.png' type='image/png' size='102103'/>
+            </attachments>
+        </test-case>
+        <test-case start='1511958012001' status='passed' stop='1511958023315'>
+            <name>Deleting Negotiation on home page</name>
+            <title>Deleting Negotiation on home page</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='89977333-a708-4e87-8d65-27a6f0ace6a4-attachment.png' type='image/png' size='102492'/>
+            </attachments>
+        </test-case>
+        <test-case start='1511958023316' status='passed' stop='1511958029617'>
+            <name>Editing Negotiation on home page</name>
+            <title>Editing Negotiation on home page</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='49aba093-7be2-48ad-97ea-d0982b903c5c-attachment.png' type='image/png' size='105585'/>
+            </attachments>
+        </test-case>
+        <test-case start='1511958029618' status='passed' stop='1511958051068'>
+            <name>Selecting Administrasjon on home page</name>
+            <title>Selecting Administrasjon on home page</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='cff4cedf-4e68-4c5e-8e27-24d2003e01c8-attachment.png' type='image/png' size='40853'/>
+            </attachments>
+        </test-case>
+        <test-case start='1511958051069' status='passed' stop='1511958064408'>
+            <name>Entering Bruker on home page</name>
+            <title>Entering Bruker on home page</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='bfa31711-f98c-48d5-90a5-27c09d988c0d-attachment.png' type='image/png' size='87968'/>
+            </attachments>
+        </test-case>
+        <test-case start='1511958064408' status='passed' stop='1511958070419'>
+            <name>Logout of the application</name>
+            <title>Logout of the application</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='e21c4ba0-fac9-4de1-bbaf-9f85c2726900-attachment.png' type='image/png' size='14903'/>
+            </attachments>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

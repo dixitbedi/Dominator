@@ -1,0 +1,141 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1511960980244' stop='1511961097184'>
+    <name>Unit4 Login</name>
+    <title>Unit4 Login</title>
+    <test-cases>
+        <test-case start='1511960980244' status='passed' stop='1511960986007'>
+            <name>Open URL</name>
+            <title>Open URL</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='6d720a24-d0ed-45cf-9dde-ad7693054672-attachment.png' type='image/png' size='11912'/>
+            </attachments>
+        </test-case>
+        <test-case start='1511960986008' status='passed' stop='1511960990953'>
+            <name>Login into the application</name>
+            <title>Login into the application</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='9b912d2e-30bd-40aa-aa7f-67dd26c0ab1e-attachment.png' type='image/png' size='30476'/>
+            </attachments>
+        </test-case>
+        <test-case start='1511960990953' status='passed' stop='1511961031022'>
+            <name>Selecting Ansvarsstedon on home page</name>
+            <title>Selecting Ansvarsstedon on home page</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='766a5e78-241e-48c4-9097-45e21b57912b-attachment.png' type='image/png' size='45753'/>
+            </attachments>
+        </test-case>
+        <test-case start='1511961031022' status='passed' stop='1511961046757'>
+            <name>Creating Negotiation on home page</name>
+            <title>Creating Negotiation on home page</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='c0d45613-89ef-49d1-98b4-f9709c8f8d5c-attachment.png' type='image/png' size='96362'/>
+            </attachments>
+        </test-case>
+        <test-case start='1511961046757' status='passed' stop='1511961058267'>
+            <name>Deleting Negotiation on home page</name>
+            <title>Deleting Negotiation on home page</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='487a9288-b148-49b1-bf2b-788ec50a1cf2-attachment.png' type='image/png' size='96422'/>
+            </attachments>
+        </test-case>
+        <test-case start='1511961058268' status='passed' stop='1511961064796'>
+            <name>Editing Negotiation on home page</name>
+            <title>Editing Negotiation on home page</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='1e0e7367-703d-450f-9185-3a386ecf8300-attachment.png' type='image/png' size='99460'/>
+            </attachments>
+        </test-case>
+        <test-case start='1511961064796' status='passed' stop='1511961087050'>
+            <name>Selecting Administrasjon on home page</name>
+            <title>Selecting Administrasjon on home page</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='17b94ebc-3571-462d-af73-df693061bd7c-attachment.png' type='image/png' size='37477'/>
+            </attachments>
+        </test-case>
+        <test-case start='1511961087050' status='failed' stop='1511961091211'>
+            <name>Entering Bruker on home page</name>
+            <title>Entering Bruker on home page</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='2621c943-0b16-4593-a627-67f194367f87-attachment.png' type='image/png' size='80856'/>
+            </attachments>
+            <failure>
+                <message>Failed: No element found using locator: By(xpath, //span/b[text()="Fagforening"]//following::option[@value="Akademikernes fellesorganisasjon [AFK]"])</message>
+                <stack-trace>NoSuchElementError: No element found using locator: By(xpath, //span/b[text()="Fagforening"]//following::option[@value="Akademikernes fellesorganisasjon [AFK]"])
+                    at elementArrayFinder.getWebElements.then (C:\Users\dixit.bedi\Eclipse-javascript\Unit4\node_modules\protractor\built\element.js:814:27)
+                    at ManagedPromise.invokeCallback_ (C:\Users\dixit.bedi\Eclipse-javascript\Unit4\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
+                    at TaskQueue.execute_ (C:\Users\dixit.bedi\Eclipse-javascript\Unit4\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+                    at TaskQueue.executeNext_ (C:\Users\dixit.bedi\Eclipse-javascript\Unit4\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+                    at asyncRun (C:\Users\dixit.bedi\Eclipse-javascript\Unit4\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27)
+                    at C:\Users\dixit.bedi\Eclipse-javascript\Unit4\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+                    at &lt;anonymous>
+                    at process._tickCallback (internal/process/next_tick.js:188:7)Error
+                    at ElementArrayFinder.applyAction_ (C:\Users\dixit.bedi\Eclipse-javascript\Unit4\node_modules\protractor\built\element.js:459:27)
+                    at ElementArrayFinder.(anonymous function).args [as click] (C:\Users\dixit.bedi\Eclipse-javascript\Unit4\node_modules\protractor\built\element.js:91:29)
+                    at ElementFinder.(anonymous function).args [as click] (C:\Users\dixit.bedi\Eclipse-javascript\Unit4\node_modules\protractor\built\element.js:831:22)
+                    at home_page.enterBruker (C:\Users\dixit.bedi\Eclipse-javascript\Unit4\Pages\home_page.js:223:29)
+                    at UserContext.&lt;anonymous> (C:\Users\dixit.bedi\Eclipse-javascript\Unit4\Tests\unit4_login_test.js:50:13)
+                    at C:\Users\dixit.bedi\Eclipse-javascript\Unit4\node_modules\protractor\node_modules\jasminewd2\index.js:112:25
+                    at new ManagedPromise (C:\Users\dixit.bedi\Eclipse-javascript\Unit4\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1077:7)
+                    at ControlFlow.promise (C:\Users\dixit.bedi\Eclipse-javascript\Unit4\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2505:12)
+                    at schedulerExecute (C:\Users\dixit.bedi\Eclipse-javascript\Unit4\node_modules\protractor\node_modules\jasminewd2\index.js:95:18)
+                    at TaskQueue.execute_ (C:\Users\dixit.bedi\Eclipse-javascript\Unit4\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+                From: Task: Run it("Entering Bruker on home page") in control flow
+                    at UserContext.&lt;anonymous> (C:\Users\dixit.bedi\Eclipse-javascript\Unit4\node_modules\protractor\node_modules\jasminewd2\index.js:94:19)
+                    at attempt (C:\Users\dixit.bedi\Eclipse-javascript\Unit4\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4297:26)
+                    at QueueRunner.run (C:\Users\dixit.bedi\Eclipse-javascript\Unit4\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4217:20)
+                    at QueueRunner.execute (C:\Users\dixit.bedi\Eclipse-javascript\Unit4\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4199:10)
+                    at Spec.queueRunnerFactory (C:\Users\dixit.bedi\Eclipse-javascript\Unit4\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:909:35)
+                    at Spec.execute (C:\Users\dixit.bedi\Eclipse-javascript\Unit4\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:526:10)
+                    at UserContext.fn (C:\Users\dixit.bedi\Eclipse-javascript\Unit4\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:5340:37)
+                    at attempt (C:\Users\dixit.bedi\Eclipse-javascript\Unit4\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4297:26)
+                    at QueueRunner.run (C:\Users\dixit.bedi\Eclipse-javascript\Unit4\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4217:20)
+                    at runNext (C:\Users\dixit.bedi\Eclipse-javascript\Unit4\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4257:20)
+                From asynchronous test: 
+                Error
+                    at Suite.&lt;anonymous> (C:\Users\dixit.bedi\Eclipse-javascript\Unit4\Tests\unit4_login_test.js:48:2)
+                    at addSpecsToSuite (C:\Users\dixit.bedi\Eclipse-javascript\Unit4\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1107:25)
+                    at Env.describe (C:\Users\dixit.bedi\Eclipse-javascript\Unit4\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1074:7)
+                    at describe (C:\Users\dixit.bedi\Eclipse-javascript\Unit4\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4399:18)
+                    at Object.&lt;anonymous> (C:\Users\dixit.bedi\Eclipse-javascript\Unit4\Tests\unit4_login_test.js:2:1)
+                    at Module._compile (module.js:641:30)
+                    at Object.Module._extensions..js (module.js:652:10)
+                    at Module.load (module.js:560:32)
+                    at tryModuleLoad (module.js:503:12)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1511961091211' status='passed' stop='1511961097182'>
+            <name>Logout of the application</name>
+            <title>Logout of the application</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='5acc997c-70ba-467e-9c5b-2eda089bbcd4-attachment.png' type='image/png' size='11817'/>
+            </attachments>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
